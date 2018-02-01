@@ -1,0 +1,26 @@
+type Item {
+  id: ID!
+  listId: ID!
+  name: String
+  checked: Boolean
+}
+
+type List {
+  id: ID!
+  name: String
+  items: [Item]
+}
+
+type Query {
+  item(id: ID!): Item
+  list(id: ID!): List
+}
+
+type Mutation {
+  createItem(listId: ID, name: String, checked: Boolean): Item
+  updateItem(id: ID!, listId: ID, name: String, checked: Boolean): Item
+  deleteItem(id: ID!): Item
+  createList(name: String): List
+  updateList(id: ID!, name: String): List
+  deleteList(id: ID!): List
+}

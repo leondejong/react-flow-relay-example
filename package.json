@@ -1,0 +1,25 @@
+{
+  "name": "react-flow-relay",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "flow-bin": "^0.59.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-relay": "^1.4.1",
+    "react-scripts": "1.0.16"
+  },
+  "scripts": {
+    "setup": "node ./setup",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "relay": "relay-compiler --src ./src --schema ./src/app/schema.graphql"
+  },
+  "devDependencies": {
+    "babel-plugin-relay": "^1.4.1",
+    "relay-compiler": "^1.4.1"
+  }
+}

@@ -1,0 +1,26 @@
+.layout {
+  display: flex;
+  flex: 1 100%;
+  flex-flow: row wrap;
+}
+
+.layout__header,
+.layout__footer {
+  flex: 1 100%;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 1);
+}
+
+.layout__header {
+  text-align: center;
+}
+
+.layout__footer {
+  text-align: right;
+}
+
+.layout__content {
+  flex: 1 100%;
+  padding: 2rem;
+}
